@@ -1,0 +1,28 @@
+/*
+La idea es que dependiendo del porte de la pantalla el fondo vaya cambiando de color. Con este código logramos que cuando la pantalla es de mínimo 1200px se vea en color rojo, cuando está entre 700px y 1200px se ve amarillo y con un máximo de 700px se ve verde.
+*/
+html {
+height: 100%;
+width: 100%;
+}
+
+body {
+height: 100%;
+width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+body {background-color: red}
+}
+
+@media only screen and (min-width:700px) and (max-width:1200px) {
+body {
+background-color:yellow
+}
+}
+
+@media only screen and (max-width:700px) {
+body {
+background-color:green
+}
+}
